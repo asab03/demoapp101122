@@ -7,5 +7,5 @@
     command: kubectl cluster-info
     register: k8sClusterOk
   - name: deploy demoapp
-    command: kubectl apply -f /k8s-manifests/demoapp-manifest.yml
+    command: kubectl apply -f tmp/demoapp-manifest.yml
 
