@@ -1,4 +1,4 @@
-- hosts: workers
+- hosts: k8s-workers
   become: true
   tasks:
   - name: Copiez la commande join sur les cibles
@@ -7,6 +7,6 @@
     - join_command
 
   - name: Joindre le cluster
-    command: bash /tmp/join-command.sh/join-command/master/join-command
+    command: bash /tmp/join-command.sh/join-command/node2/join-command
     tags:
     - join_command
