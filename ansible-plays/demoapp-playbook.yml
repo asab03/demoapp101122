@@ -1,5 +1,5 @@
 - name: déploiement de demoapp sur cluster k8s
-  hosts: master
+  hosts: k8s-master
   become: false
   gather_facts: false
   tasks:
