@@ -7,6 +7,6 @@
     - join_command
 
   - name: Joindre le cluster
-    command: bash /tmp/join-command.sh/join-command/node2/join-command
+    command: bash /tmp/join-command.sh/join-command/k8s-master/join-command
     tags:
     - join_command
